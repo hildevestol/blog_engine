@@ -1,3 +1,6 @@
+require "ckeditor"
+require "jquery-rails"
+
 module BlogEngine
   class Engine < ::Rails::Engine
     isolate_namespace BlogEngine
