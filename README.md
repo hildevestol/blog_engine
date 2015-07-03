@@ -8,7 +8,5 @@ This project rocks and uses MIT-LICENSE.
 * `rake blog_engine:install:migrations`
 * `rake db:migrate`
 * in routes.rb `mount BlogEngine::Engine, at: '/blog'`
+* in routes.rb `mount Ckeditor::Engine => '/ckeditor'`
 
-### Install ckeditor
-* `rails generate ckeditor:install --orm=active_record --backend=carrierwave`
-* `rake db:migrate`
