@@ -1,5 +1,6 @@
 require "ckeditor"
 require "jquery-rails"
+require "carrierwave"
 
 module BlogEngine
   class Engine < ::Rails::Engine
