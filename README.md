@@ -3,7 +3,7 @@
 This project rocks and uses MIT-LICENSE.
 
 ## Installation
-* `gem 'blog_engine', path: 'path_to_local_gem'`
+* `gem 'blog_engine', git: 'https://github.com/hildevestol/blog_engine'`
 * `rake blog_engine:install:migrations`
 * `rake db:migrate`
 * in routes.rb `mount BlogEngine::Engine, at: '/blog'`
@@ -22,3 +22,13 @@ For development I recomend using f.eks. [dotenv-rails](https://github.com/bkeepe
 For Rails 4, add the following to config/initializers/assets.rb:
 
 `Rails.application.config.assets.precompile += %w( ckeditor/* )`
+
+To improve build time replace 
+````ruby
+config.assets.js_compressor = :uglifier
+````
+with
+````ruby
+config.assets.js_compressor = Uglifier.new(compress: { unused: false}) if defined? Uglifier
+````
+the following to `production.rb`
