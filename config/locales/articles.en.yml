@@ -1,0 +1,11 @@
+en:
+  blog_engine:
+    show: 'Show'
+    back: 'Back'
+    edit: 'Edit'
+    delete: 'Delete'
+    new: 'New article'
+    articles:
+      index:
+        title: "Articles"
+

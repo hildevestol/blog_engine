@@ -1,0 +1,25 @@
+nb:
+  blog_engine:
+    show: 'Forhåndsvisning'
+    back: 'Tilbake'
+    edit: 'Rediger'
+    delete: 'Slett'
+    new: 'Ny artikkel'
+    articles:
+      index:
+        title: "Artikler"
+      new:
+        title: "Ny artikkel"
+      edit:
+        title: "Rediger artikkel"
+
+
+  activerecord:
+    models:
+      'blog_engine/article':
+        one: 'artikkel'
+        other: 'artikler'
+    attributes:
+      'blog_engine/article':
+        title: 'Tittel'
+        body: 'Post'

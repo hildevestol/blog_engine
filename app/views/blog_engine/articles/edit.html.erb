@@ -1,9 +1,7 @@
-<h1>Editing Article</h1>
+<h1><%= t '.title' %></h1>
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @article %> |
-<%= link_to 'Back', articles_path %>
+<%= link_to t('blog_engine.show'), @article %> |
+<%= link_to t('blog_engine.back'), articles_path %>
 
-
-<button class="btn btn-primary">test</button>
