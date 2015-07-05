@@ -1,6 +1,7 @@
 require "ckeditor"
 require "jquery-rails"
 require "carrierwave"
+require "bootstrap-sass"
 
 module BlogEngine
   class Engine < ::Rails::Engine
