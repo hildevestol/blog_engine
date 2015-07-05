@@ -16,4 +16,9 @@ The following environment variables is required.
 * `AWS_SECRET_KEY`
 * `AWS_BUCKET`
 
-For development I recomend using f.kes. [dotenv-rails](https://github.com/bkeepers/dotenv) gem
+For development I recomend using f.eks. [dotenv-rails](https://github.com/bkeepers/dotenv) gem
+
+### For heroku deploy
+For Rails 4, add the following to config/initializers/assets.rb:
+
+`Rails.application.config.assets.precompile += %w( ckeditor/* )`
